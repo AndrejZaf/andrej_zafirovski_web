@@ -33,13 +33,13 @@ export const ProfileCertification = () => {
           >
             <a href={cert.url}>
               <div className="flex justify-between items-center">
-                <div className="flex items-center space-x-4 py-2">
+                <div className="flex items-center space-x-4">
                   <img
                     src={cert.image}
                     alt={cert.title}
                     className="h-12 w-12"
                   />
-                  <div>
+                  <div className="border-l p-2">
                     <div className="font-semibold">{cert.title}</div>
                     <div className="text-sm text-gray-500">{cert.issuer}</div>
                     <div className="text-sm text-gray-500">{cert.date}</div>

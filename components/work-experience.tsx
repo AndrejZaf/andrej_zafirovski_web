@@ -134,10 +134,10 @@ export function ExperiencePositionItem({
     <div className="relative last:before:absolute last:before:h-full last:before:w-4 last:before:bg-background">
       <div className="relative z-1 mb-1 flex items-center gap-3 bg-background">
         <div
-          className="flex size-6 shrink-0 items-center justify-center rounded-lg bg-muted text-muted-foreground"
+          className="flex size-6 shrink-0 items-center justify-center rounded-full text-muted-foreground border"
           aria-hidden
         >
-          <ExperienceIcon className="size-4" />
+          <ExperienceIcon size={14} />
         </div>
 
         <h4 className="flex-1 text-base font-medium text-balance">
@@ -154,20 +154,6 @@ export function ExperiencePositionItem({
       </div>
 
       <div className="flex items-center gap-2 pl-9 text-sm text-muted-foreground">
-        {position.employmentType && (
-          <>
-            <dl>
-              <dt className="sr-only">Employment Type</dt>
-              <dd>{position.employmentType}</dd>
-            </dl>
-
-            <Separator
-              className="data-[orientation=vertical]:h-4"
-              orientation="vertical"
-            />
-          </>
-        )}
-
         <dl>
           <dt className="sr-only">Employment Period</dt>
           <dd>{position.employmentPeriod}</dd>
