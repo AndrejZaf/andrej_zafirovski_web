@@ -9,10 +9,12 @@ export const ProfileEduction = () => {
           Faculty of Computer Science and Engineering within UKIM
         </div>
         <div className="flex justify-between">
-          <div className="italic">
+          <div className="italic text-sm text-gray-500">
             Bachelor of Science (B.S.) in Computer Science
           </div>
-          <div>September 2017 – August 2021</div>
+          <div className="text-sm text-gray-500">
+            September 2017 – August 2021
+          </div>
         </div>
       </div>
     </div>

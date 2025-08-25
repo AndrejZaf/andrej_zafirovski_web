@@ -1,3 +1,5 @@
+import { ExternalLink } from "lucide-react";
+
 const ProfileLinks = () => {
   return (
     <div>
@@ -10,29 +12,39 @@ const ProfileLinks = () => {
           className="hover:underline border-r p-4"
           target="_blank"
         >
-          <div className="flex flex-row gap-x-2 items-center">
-            <div>
-              <img src="./github.svg" alt="GitHub" className="h-12 w-12" />
+          <div className="flex justify-between items-center">
+            <div className="flex flex-row gap-x-2 items-center">
+              <div>
+                <img src="./github.svg" alt="GitHub" className="h-12 w-12" />
+              </div>
+              <div className="flex flex-col">
+                <div className="font-semibold">GitHub</div>
+                <div>AndrejZaf</div>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <div className="font-semibold">GitHub</div>
-              <div>AndrejZaf</div>
-            </div>
+            <ExternalLink size={18} />
           </div>
         </a>
         <a
           href="https://www.linkedin.com/in/andrej-zafirovski/"
-          className="hover:no-underline border-l p-4"
+          className="hover:underline border-l p-4"
           target="_blank"
         >
-          <div className="flex flex-row gap-x-2 items-center">
-            <div>
-              <img src="./linkedin.svg" alt="LinkedIn" className="h-12 w-12" />
+          <div className="flex justify-between items-center">
+            <div className="flex flex-row gap-x-2 items-center">
+              <div>
+                <img
+                  src="./linkedin.svg"
+                  alt="LinkedIn"
+                  className="h-12 w-12"
+                />
+              </div>
+              <div className="flex flex-col">
+                <div className="font-semibold">LinkedIn</div>
+                <div>andrej-zafirovski</div>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <div className="font-semibold">LinkedIn</div>
-              <div>andrej-zafirovski</div>
-            </div>
+            <ExternalLink size={18} />
           </div>
         </a>
       </div>
