@@ -6,8 +6,7 @@ export const ProfileEduction = () => {
       </div>
       <div className="flex flex-col">
         <div className="font-semibold">
-          Faculty of Computer Science and Engineering within UKIM – Skopje,
-          North Macedonia
+          Faculty of Computer Science and Engineering within UKIM
         </div>
         <div className="flex justify-between">
           <div className="italic">

@@ -2,7 +2,7 @@ import { Code, Mail, MapPinIcon, Phone } from "lucide-react";
 
 const ProfileDetails = () => {
   return (
-    <div className="flex flex-col gap-1 px-4">
+    <div className="flex flex-col gap-1 px-4 py-1">
       <div className="flex items-center gap-x-2">
         <Code size={14} />
         <div>Software Engineer</div>
