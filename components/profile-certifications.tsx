@@ -45,7 +45,7 @@ export const ProfileCertification = () => {
                     <div className="text-sm text-gray-500">{cert.date}</div>
                   </div>
                 </div>
-                <ExternalLink size={18} />
+                <ExternalLink className="text-muted-foreground" size={18} />
               </div>
             </a>
           </div>

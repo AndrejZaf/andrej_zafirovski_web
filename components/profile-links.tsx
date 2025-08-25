@@ -22,7 +22,7 @@ const ProfileLinks = () => {
                 <div>AndrejZaf</div>
               </div>
             </div>
-            <ExternalLink size={18} />
+            <ExternalLink size={18} className="text-muted-foreground" />
           </div>
         </a>
         <a
@@ -44,7 +44,7 @@ const ProfileLinks = () => {
                 <div>andrej-zafirovski</div>
               </div>
             </div>
-            <ExternalLink size={18} />
+            <ExternalLink size={18} className="text-muted-foreground" />
           </div>
         </a>
       </div>
