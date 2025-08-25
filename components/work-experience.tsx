@@ -10,11 +10,6 @@ import Image from "next/image";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
@@ -98,7 +93,6 @@ export function ExperienceItem({
                 alt={experience.companyName}
                 width={24}
                 height={24}
-                quality={100}
                 unoptimized
               />
             ) : (
