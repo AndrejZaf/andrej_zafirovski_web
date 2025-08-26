@@ -41,14 +41,9 @@ export const TechnologyStack = () => {
       image: "./tech-stack/quarkus.svg",
     },
     {
-      id: 8,
+      id: 9,
       name: "Django",
       image: "./tech-stack/django.svg",
-    },
-    {
-      id: 9,
-      name: ".NET",
-      image: "./tech-stack/dotnet.svg",
     },
     {
       id: 10,
@@ -59,16 +54,6 @@ export const TechnologyStack = () => {
       id: 11,
       name: "GraphQL",
       image: "./tech-stack/graphql.svg",
-    },
-    {
-      id: 12,
-      name: "JUnit5",
-      image: "./tech-stack/junit5.svg",
-    },
-    {
-      id: 13,
-      name: "Swagger",
-      image: "./tech-stack/swagger.svg",
     },
     {
       id: 14,
@@ -112,11 +97,6 @@ export const TechnologyStack = () => {
       id: 8,
       name: "CSS3",
       image: "./tech-stack/css.svg",
-    },
-    {
-      id: 9,
-      name: "ESLint",
-      image: "./tech-stack/eslint.svg",
     },
     {
       id: 10,
@@ -185,24 +165,9 @@ export const TechnologyStack = () => {
       image: "./tech-stack/docker.svg",
     },
     {
-      id: 6,
-      name: "Jira",
-      image: "./tech-stack/jira.svg",
-    },
-    {
-      id: 7,
-      name: "Confluence",
-      image: "./tech-stack/confluence.svg",
-    },
-    {
       id: 8,
       name: "Liquibase",
       image: "./tech-stack/liquibase.svg",
-    },
-    {
-      id: 9,
-      name: "ElasticSearch",
-      image: "./tech-stack/elasticsearch.svg",
     },
     {
       id: 10,
