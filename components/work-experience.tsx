@@ -2,7 +2,7 @@ import {
   BriefcaseBusinessIcon,
   ChevronsDownUpIcon,
   ChevronsUpDownIcon,
-  CodeXmlIcon,
+  CodeIcon,
   DraftingCompassIcon,
   GraduationCapIcon,
 } from "lucide-react";
@@ -10,11 +10,10 @@ import Image from "next/image";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 
-import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
 const iconMap = {
-  code: CodeXmlIcon,
+  code: CodeIcon,
   design: DraftingCompassIcon,
   business: BriefcaseBusinessIcon,
   education: GraduationCapIcon,
@@ -143,22 +142,14 @@ export function ExperiencePositionItem({
         <h4 className="flex-1 text-base font-medium text-balance">
           {position.title}
         </h4>
-
-        <div
-          className="shrink-0 text-muted-foreground [&_svg]:size-4"
-          aria-hidden
-        >
-          <ChevronsDownUpIcon className="hidden group-data-[state=open]/experience:block" />
-          <ChevronsUpDownIcon className="hidden group-data-[state=closed]/experience:block" />
+        <div className="flex items-center gap-2 pl-9 text-sm text-muted-foreground">
+          <dl>
+            <dt className="sr-only">Employment Period</dt>
+            <dd>{position.employmentPeriod}</dd>
+          </dl>
         </div>
       </div>
 
-      <div className="flex items-center gap-2 pl-9 text-sm text-muted-foreground">
-        <dl>
-          <dt className="sr-only">Employment Period</dt>
-          <dd>{position.employmentPeriod}</dd>
-        </dl>
-      </div>
       {position.description && (
         <Prose className="pt-2 pl-9">
           <ReactMarkdown>{position.description}</ReactMarkdown>

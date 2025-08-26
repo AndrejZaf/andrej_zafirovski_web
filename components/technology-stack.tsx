@@ -1,0 +1,279 @@
+export const TechnologyStack = () => {
+  const BACKEND_TECHNOLOGY_STACK = [
+    {
+      id: 1,
+      name: "Java",
+      image: "./tech-stack/java.svg",
+    },
+    {
+      id: 2,
+      name: "TypeScript",
+      image: "./tech-stack/typescript.svg",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      image: "./tech-stack/javascript.svg",
+    },
+    {
+      id: 4,
+      name: "C#",
+      image: "./tech-stack/csharp.svg",
+    },
+    {
+      id: 5,
+      name: "Python",
+      image: "./tech-stack/python.svg",
+    },
+    {
+      id: 6,
+      name: "Spring Boot",
+      image: "./tech-stack/spring.svg",
+    },
+    {
+      id: 7,
+      name: "Quarkus",
+      image: "./tech-stack/quarkus.svg",
+    },
+    {
+      id: 8,
+      name: "Django",
+      image: "./tech-stack/django.svg",
+    },
+    {
+      id: 9,
+      name: ".NET",
+      image: "./tech-stack/dotnet.svg",
+    },
+    {
+      id: 10,
+      name: "NodeJS",
+      image: "./tech-stack/nodejs.svg",
+    },
+    {
+      id: 11,
+      name: "GraphQL",
+      image: "./tech-stack/graphql.svg",
+    },
+    {
+      id: 12,
+      name: "JUnit5",
+      image: "./tech-stack/junit5.svg",
+    },
+    {
+      id: 13,
+      name: "Swagger",
+      image: "./tech-stack/swagger.svg",
+    },
+    {
+      id: 14,
+      name: "OpenAPI",
+      image: "./tech-stack/openapi.svg",
+    },
+  ];
+
+  const FRONTEND_TECHNOLOGY_STACK = [
+    {
+      id: 1,
+      name: "Angular",
+      image: "./tech-stack/angular.svg",
+    },
+    {
+      id: 2,
+      name: "React",
+      image: "./tech-stack/react.svg",
+    },
+    {
+      id: 3,
+      name: "NextJS",
+      image: "./tech-stack/nextjs.svg",
+    },
+    {
+      id: 4,
+      name: "Tailwind CSS",
+      image: "./tech-stack/tailwindcss.svg",
+    },
+    {
+      id: 5,
+      name: "Bootstrap",
+      image: "./tech-stack/bootstrap.svg",
+    },
+    {
+      id: 7,
+      name: "HTML5",
+      image: "./tech-stack/html.svg",
+    },
+    {
+      id: 8,
+      name: "CSS3",
+      image: "./tech-stack/css.svg",
+    },
+    {
+      id: 9,
+      name: "ESLint",
+      image: "./tech-stack/eslint.svg",
+    },
+    {
+      id: 10,
+      name: "MaterialUI",
+      image: "./tech-stack/materialui.svg",
+    },
+    {
+      id: 11,
+      name: "Redux",
+      image: "./tech-stack/redux.svg",
+    },
+    {
+      id: 12,
+      name: "Vite",
+      image: "./tech-stack/vitejs.svg",
+    },
+  ];
+
+  const DATABASE_TECHNOLOGY_STACK = [
+    {
+      id: 1,
+      name: "PostgreSQL",
+      image: "./tech-stack/postgresql.svg",
+    },
+    {
+      id: 2,
+      name: "MySQL",
+      image: "./tech-stack/mysql.svg",
+    },
+    {
+      id: 3,
+      name: "SQLite",
+      image: "./tech-stack/sqlite.svg",
+    },
+    {
+      id: 4,
+      name: "Neo4j",
+      image: "./tech-stack/neo4j.svg",
+    },
+  ];
+
+  const OTHER_TECHNOLOGY_STACK = [
+    {
+      id: 1,
+      name: "Git",
+      image: "./tech-stack/git.svg",
+    },
+    {
+      id: 2,
+      name: "Kafka",
+      image: "./tech-stack/kafka.svg",
+    },
+    {
+      id: 3,
+      name: "RabbitMQ",
+      image: "./tech-stack/rabbitmq.svg",
+    },
+    {
+      id: 4,
+      name: "Consul",
+      image: "./tech-stack/consul.svg",
+    },
+    {
+      id: 5,
+      name: "Docker",
+      image: "./tech-stack/docker.svg",
+    },
+    {
+      id: 6,
+      name: "Jira",
+      image: "./tech-stack/jira.svg",
+    },
+    {
+      id: 7,
+      name: "Confluence",
+      image: "./tech-stack/confluence.svg",
+    },
+    {
+      id: 8,
+      name: "Liquibase",
+      image: "./tech-stack/liquibase.svg",
+    },
+    {
+      id: 9,
+      name: "ElasticSearch",
+      image: "./tech-stack/elasticsearch.svg",
+    },
+    {
+      id: 10,
+      name: "Jenkins",
+      image: "./tech-stack/jenkins.svg",
+    },
+  ];
+
+  return (
+    <div>
+      <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+        <h1 className="text-xl font-semibold px-4">Technology Stack</h1>
+      </div>
+
+      <div className="">
+        <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+          <h1 className="text-lg font-semibold px-4">Back End</h1>
+        </div>
+        <div className="flex px-2 gap-x-2">
+          {BACKEND_TECHNOLOGY_STACK.map((tech) => (
+            <img
+              src={tech.image}
+              alt={tech.name}
+              key={tech.id}
+              className="h-10 w-10"
+            />
+          ))}
+        </div>
+        <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+          <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+            <h1 className="text-lg font-semibold px-4">Front End</h1>
+          </div>
+          <div className="flex px-2 gap-x-2">
+            {FRONTEND_TECHNOLOGY_STACK.map((tech) => (
+              <img
+                src={tech.image}
+                alt={tech.name}
+                key={tech.id}
+                className="h-10 w-10"
+              />
+            ))}
+          </div>
+        </div>
+        <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+          <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+            <h1 className="text-lg font-semibold px-4">Databases</h1>
+          </div>
+          <div className="flex px-2 gap-x-2">
+            {DATABASE_TECHNOLOGY_STACK.map((tech) => (
+              <img
+                src={tech.image}
+                alt={tech.name}
+                key={tech.id}
+                className="h-10 w-10"
+              />
+            ))}
+          </div>
+        </div>
+        <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+          <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+            <h1 className="text-lg font-semibold px-4">Other</h1>
+          </div>
+          <div className="flex px-2 gap-x-2">
+            {OTHER_TECHNOLOGY_STACK.map((tech) => (
+              <img
+                src={tech.image}
+                alt={tech.name}
+                key={tech.id}
+                className="h-10 w-10"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TechnologyStack;

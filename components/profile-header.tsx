@@ -17,6 +17,7 @@ const ProfileHeader = () => {
           Andrej Zafirovski
         </div>
         <div className="px-4">Software Engineer</div>
+        {/* Full Stack Engineer | Building scalable microservices & clean architectures */}
       </div>
     </div>
     //   </div>

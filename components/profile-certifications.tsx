@@ -29,7 +29,7 @@ export const ProfileCertification = () => {
         {CERTIFICATIONS.map((cert) => (
           <div
             key={cert.id}
-            className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]"
+            className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw] last:after:bg-transparent"
           >
             <a href={cert.url}>
               <div className="flex justify-between items-center">
