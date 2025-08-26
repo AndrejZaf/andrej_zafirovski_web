@@ -1,27 +1,34 @@
+"use client";
+
+import { motion } from "motion/react";
+
 const ProfileHeader = () => {
   return (
-    // <div className="flex justify-center border-b">
-    //   <div className="w-full md:w-lg">
-    <div className="flex">
-      <div className="border-r">
-        <div className="p-0.5">
-          <img
-            src="./me.jpeg"
-            alt="Small profile"
-            className="aspect-square w-48 rounded-full outline-1 outline-offset-2 mx-auto object-cover object-top"
-          />
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-10% 0px" }}
+      transition={{ duration: 0.36 }}
+    >
+      <div className="flex">
+        <div className="border-r">
+          <div className="p-0.5">
+            <img
+              src="./me.jpeg"
+              alt="Small profile"
+              className="aspect-square w-48 rounded-full outline-1 outline-offset-2 mx-auto object-cover object-top"
+            />
+          </div>
+        </div>
+        <div className="w-full self-end">
+          <div className="text-xl font-semibold border-y px-4">
+            Andrej Zafirovski
+          </div>
+          <div className="px-4">Software Engineer</div>
+          {/* Full Stack Engineer | Building scalable microservices & clean architectures */}
         </div>
       </div>
-      <div className="w-full self-end">
-        <div className="text-xl font-semibold border-y px-4">
-          Andrej Zafirovski
-        </div>
-        <div className="px-4">Software Engineer</div>
-        {/* Full Stack Engineer | Building scalable microservices & clean architectures */}
-      </div>
-    </div>
-    //   </div>
-    // </div>
+    </motion.div>
   );
 };
 

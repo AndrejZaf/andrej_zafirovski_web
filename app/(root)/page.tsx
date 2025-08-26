@@ -6,9 +6,8 @@ import ProfileEduction from "@/components/profile-education";
 import ProfileExperience from "@/components/profile-experience";
 import ProfileHeader from "@/components/profile-header";
 import ProfileLinks from "@/components/profile-links";
-import Projects from "@/components/projects";
-import TechnologyStack from "@/components/technology-stack";
 import { Separator } from "@/components/separator";
+import TechnologyStack from "@/components/technology-stack";
 
 const Page = () => {
   return (
@@ -41,10 +40,6 @@ const Page = () => {
         <div className="relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10 before:-left-[100vw] border-x">
           <ProfileCertification />
         </div>
-        {/* <Separator />
-        <div className="relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10 before:-left-[100vw] border-x">
-          <Projects />
-        </div> */}
         <Separator />
         <div className="relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10 before:-left-[100vw] border-x">
           <TechnologyStack />

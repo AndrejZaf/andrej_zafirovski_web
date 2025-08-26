@@ -1,3 +1,5 @@
+"use client";
+
 import {
   BriefcaseBusinessIcon,
   ChevronsDownUpIcon,
@@ -11,6 +13,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 
 import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
 
 const iconMap = {
   code: CodeIcon,
@@ -55,6 +58,19 @@ export type ExperienceItemType = {
   positions: ExperiencePositionItemType[];
   /** Indicates if this is the user's current employer */
   isCurrentEmployer?: boolean;
+};
+
+const container = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { staggerChildren: 0.08 } },
+};
+const item = {
+  hidden: { opacity: 0, y: 12 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { stiffness: 400, damping: 30, mass: 0.6 },
+  },
 };
 
 export function WorkExperience({
@@ -105,8 +121,8 @@ export function ExperienceItem({
 
           {experience.isCurrentEmployer && (
             <span className="relative flex items-center justify-center">
-              <span className="absolute inline-flex size-3 animate-ping rounded-full bg-info opacity-50" />
-              <span className="relative inline-flex size-2 rounded-full bg-info" />
+              <span className="absolute inline-flex size-3 animate-ping rounded-full bg-blue-500 opacity-50" />
+              <span className="relative inline-flex size-2 rounded-full bg-blue-500" />
               <span className="sr-only">Current Employer</span>
             </span>
           )}
@@ -157,13 +173,19 @@ export function ExperiencePositionItem({
       )}
 
       {Array.isArray(position.skills) && position.skills.length > 0 && (
-        <ul className="not-prose flex flex-wrap gap-1.5 pt-2 pl-9">
+        <motion.ul
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+          className="not-prose flex flex-wrap gap-1.5 pt-2 pl-9"
+        >
           {position.skills.map((skill, index) => (
-            <li key={index} className="flex">
+            <motion.li key={index} variants={item} className="flex">
               <Skill>{skill}</Skill>
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       )}
     </div>
   );
