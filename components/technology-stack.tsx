@@ -183,13 +183,13 @@ export const TechnologyStack = () => {
       viewport={{ once: true, margin: "-10% 0px" }}
       transition={{ duration: 0.36 }}
     >
-      <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+      <div className="border-b">
         <h1 className="text-xl font-semibold px-4">Technology Stack</h1>
       </div>
 
       <div className="">
-        <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
-          <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+        <div className="border-b">
+          <div className="border-b">
             <h1 className="text-lg font-semibold px-4">Back End</h1>
           </div>
           <div className="flex px-2 gap-x-2 py-1">
@@ -205,8 +205,8 @@ export const TechnologyStack = () => {
             ))}
           </div>
         </div>
-        <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
-          <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+        <div className="border-b">
+          <div className="border-b">
             <h1 className="text-lg font-semibold px-4">Front End</h1>
           </div>
           <div className="flex px-2 gap-x-2 py-1">
@@ -222,8 +222,8 @@ export const TechnologyStack = () => {
             ))}
           </div>
         </div>
-        <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
-          <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+        <div className="border-b">
+          <div className="border-b">
             <h1 className="text-lg font-semibold px-4">Databases</h1>
           </div>
           <div className="flex px-2 gap-x-2 py-1">
@@ -239,8 +239,8 @@ export const TechnologyStack = () => {
             ))}
           </div>
         </div>
-        <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
-          <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+        <div className="border-b">
+          <div className="border-b">
             <h1 className="text-lg font-semibold px-4">Other</h1>
           </div>
           <div className="flex px-2 gap-x-2 py-1">

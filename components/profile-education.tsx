@@ -9,12 +9,11 @@ export const ProfileEduction = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-10% 0px" }}
       transition={{ duration: 0.36 }}
-      className="px-4"
     >
-      <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+      <div className="border-b px-4">
         <h1 className="text-xl font-semibold">Education</h1>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col px-4">
         <div className="font-semibold">
           Faculty of Computer Science and Engineering within UKIM
         </div>

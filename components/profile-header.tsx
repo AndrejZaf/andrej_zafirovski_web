@@ -9,6 +9,7 @@ const ProfileHeader = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-10% 0px" }}
       transition={{ duration: 0.36 }}
+      className="border-b"
     >
       <div className="flex">
         <div className="border-r">

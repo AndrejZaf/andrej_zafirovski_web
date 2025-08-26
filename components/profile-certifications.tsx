@@ -29,17 +29,13 @@ export const ProfileCertification = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-10% 0px" }}
       transition={{ duration: 0.36 }}
-      className="px-4"
     >
-      <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+      <div className="border-b px-4">
         <h1 className="text-xl font-semibold">Certifications</h1>
       </div>
       <div className="flex flex-col">
         {CERTIFICATIONS.map((cert) => (
-          <div
-            key={cert.id}
-            className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw] last:after:bg-transparent"
-          >
+          <div key={cert.id} className="border-b last:border-0 px-4">
             <a href={cert.url}>
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">

@@ -81,7 +81,7 @@ export function WorkExperience({
   experiences: ExperienceItemType[];
 }) {
   return (
-    <div className={cn("bg-background px-4", className)}>
+    <div className={cn("bg-background", className)}>
       {experiences.map((experience) => (
         <ExperienceItem key={experience.id} experience={experience} />
       ))}
@@ -95,7 +95,7 @@ export function ExperienceItem({
   experience: ExperienceItemType;
 }) {
   return (
-    <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+    <div className="border-b px-4">
       <div className="space-y-4 py-4">
         <div className="not-prose flex items-center gap-3">
           <div
