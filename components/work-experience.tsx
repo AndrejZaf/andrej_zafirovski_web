@@ -178,11 +178,23 @@ export function ExperiencePositionItem({
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="not-prose flex flex-wrap gap-1.5 pt-2 pl-9"
+          className="flex flex-wrap gap-1.5 pt-2 pl-9"
         >
           {position.skills.map((skill, index) => (
-            <motion.li key={index} variants={item} className="flex">
+            <motion.li
+              key={index}
+              variants={item}
+              className="flex items-center"
+            >
               <Skill>{skill}</Skill>
+              {index !== position.skills!.length - 1 && (
+                <span
+                  aria-hidden
+                  className="mx-2 text-muted-foreground text-xs"
+                >
+                  /
+                </span>
+              )}
             </motion.li>
           ))}
         </motion.ul>
@@ -209,7 +221,7 @@ function Skill({ className, ...props }: React.ComponentProps<"span">) {
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-lg border bg-muted/50 px-1.5 py-0.5 text-xs text-muted-foreground",
+        "inline-flex items-center px-1 py-0.5 text-xs text-muted-foreground",
         className
       )}
       {...props}
