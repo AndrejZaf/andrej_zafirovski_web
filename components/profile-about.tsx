@@ -5,9 +5,10 @@ const ProfileAbout = () => {
         <h1 className="text-xl font-semibold">About Me</h1>
       </div>
       <p className="text-justify">
-        Full Stack Engineer with more than five years of experience developing
-        primarily web applications. Always interested in learning new languages
-        and technologies and automating manual & error prone work.
+        Full Stack Engineer with 5+ years of experience building scalable
+        microservices and modern web applications. Experienced in Java,
+        TypeScript, Spring Boot, and React. Passionate about automation, clean
+        architecture, and solving complex system problems.
       </p>
     </div>
   );

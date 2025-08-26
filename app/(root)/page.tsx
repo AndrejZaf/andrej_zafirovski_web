@@ -41,10 +41,10 @@ const Page = () => {
         <div className="relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10 before:-left-[100vw] border-x">
           <ProfileCertification />
         </div>
-        <Separator />
+        {/* <Separator />
         <div className="relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10 before:-left-[100vw] border-x">
           <Projects />
-        </div>
+        </div> */}
         <Separator />
         <div className="relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10 before:-left-[100vw] border-x">
           <TechnologyStack />
