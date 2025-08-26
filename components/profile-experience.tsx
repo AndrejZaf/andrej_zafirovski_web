@@ -152,7 +152,7 @@ const ProfileExperience = () => {
       viewport={{ once: true, margin: "-10% 0px" }}
       transition={{ duration: 0.36 }}
     >
-      <div className="border-b">
+      <div>
         <h1 className="text-xl font-semibold px-4">Experience</h1>
       </div>
       <WorkExperience experiences={WORK_EXPERIENCE} />

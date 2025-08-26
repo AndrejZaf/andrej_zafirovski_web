@@ -95,7 +95,7 @@ export function ExperienceItem({
   experience: ExperienceItemType;
 }) {
   return (
-    <div className="border-b px-4">
+    <div className="border-b last:border-0 px-4">
       <div className="space-y-4 py-4">
         <div className="not-prose flex items-center gap-3">
           <div

@@ -21,6 +21,7 @@ const Page = () => {
         <ProfileLinks />
         <Separator />
         <ProfileExperience />
+        <Separator />
         <ProfileEduction />
         <Separator />
         <ProfileCertification />
