@@ -36,7 +36,7 @@ export const ProfileCertification = () => {
       <div className="flex flex-col">
         {CERTIFICATIONS.map((cert) => (
           <div key={cert.id} className="border-b last:border-0 px-4">
-            <a href={cert.url}>
+            <a href={cert.url} className="hover:underline">
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">
                   <img

@@ -3,6 +3,23 @@
 import { ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 
+const LINKS = [
+  {
+    id: 1,
+    title: "GitHub",
+    subtitle: "AndrejZaf",
+    image: "./github.svg",
+    url: "https://github.com/AndrejZaf",
+  },
+  {
+    id: 2,
+    title: "LinkedIn",
+    subtitle: "andrej-zafirovski",
+    image: "./linkedin.svg",
+    url: "https://www.linkedin.com/in/andrej-zafirovski/",
+  },
+];
+
 const ProfileLinks = () => {
   return (
     <motion.div
@@ -16,46 +33,31 @@ const ProfileLinks = () => {
           <h1 className="text-xl font-semibold px-4">Links</h1>
         </div>
         <div className="grid grid-cols-2 gap-x-4">
-          <a
-            href="https://github.com/AndrejZaf"
-            className="hover:underline border-r p-4"
-            target="_blank"
-          >
-            <div className="flex justify-between items-center">
-              <div className="flex flex-row gap-x-2 items-center">
-                <div>
-                  <img src="./github.svg" alt="GitHub" className="h-12 w-12" />
+          {LINKS.map((link) => (
+            <a
+              key={link.id}
+              href={link.url}
+              className="hover:underline border-r p-4"
+              target="_blank"
+            >
+              <div className="flex justify-between items-center">
+                <div className="flex flex-row gap-x-2 items-center">
+                  <div>
+                    <img
+                      src={link.image}
+                      alt={link.title}
+                      className="h-12 w-12"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="font-semibold">{link.title}</div>
+                    <div>{link.subtitle}</div>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <div className="font-semibold">GitHub</div>
-                  <div>AndrejZaf</div>
-                </div>
+                <ExternalLink size={18} className="text-muted-foreground" />
               </div>
-              <ExternalLink size={18} className="text-muted-foreground" />
-            </div>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/andrej-zafirovski/"
-            className="hover:underline border-l p-4"
-            target="_blank"
-          >
-            <div className="flex justify-between items-center">
-              <div className="flex flex-row gap-x-2 items-center">
-                <div>
-                  <img
-                    src="./linkedin.svg"
-                    alt="LinkedIn"
-                    className="h-12 w-12"
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <div className="font-semibold">LinkedIn</div>
-                  <div>andrej-zafirovski</div>
-                </div>
-              </div>
-              <ExternalLink size={18} className="text-muted-foreground" />
-            </div>
-          </a>
+            </a>
+          ))}
         </div>
       </div>
     </motion.div>
