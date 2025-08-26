@@ -1,3 +1,5 @@
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+
 export const TechnologyStack = () => {
   const BACKEND_TECHNOLOGY_STACK = [
     {
@@ -214,30 +216,36 @@ export const TechnologyStack = () => {
 
       <div className="">
         <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
-          <h1 className="text-lg font-semibold px-4">Back End</h1>
-        </div>
-        <div className="flex px-2 gap-x-2">
-          {BACKEND_TECHNOLOGY_STACK.map((tech) => (
-            <img
-              src={tech.image}
-              alt={tech.name}
-              key={tech.id}
-              className="h-10 w-10"
-            />
-          ))}
+          <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
+            <h1 className="text-lg font-semibold px-4">Back End</h1>
+          </div>
+          <div className="flex px-2 gap-x-2 py-1">
+            {BACKEND_TECHNOLOGY_STACK.map((tech) => (
+              <Tooltip key={tech.id}>
+                <TooltipTrigger asChild>
+                  <img src={tech.image} alt={tech.name} className="h-10 w-10" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{tech.name}</p>
+                </TooltipContent>
+              </Tooltip>
+            ))}
+          </div>
         </div>
         <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
           <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
             <h1 className="text-lg font-semibold px-4">Front End</h1>
           </div>
-          <div className="flex px-2 gap-x-2">
+          <div className="flex px-2 gap-x-2 py-1">
             {FRONTEND_TECHNOLOGY_STACK.map((tech) => (
-              <img
-                src={tech.image}
-                alt={tech.name}
-                key={tech.id}
-                className="h-10 w-10"
-              />
+              <Tooltip key={tech.id}>
+                <TooltipTrigger asChild>
+                  <img src={tech.image} alt={tech.name} className="h-10 w-10" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{tech.name}</p>
+                </TooltipContent>
+              </Tooltip>
             ))}
           </div>
         </div>
@@ -245,14 +253,16 @@ export const TechnologyStack = () => {
           <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
             <h1 className="text-lg font-semibold px-4">Databases</h1>
           </div>
-          <div className="flex px-2 gap-x-2">
+          <div className="flex px-2 gap-x-2 py-1">
             {DATABASE_TECHNOLOGY_STACK.map((tech) => (
-              <img
-                src={tech.image}
-                alt={tech.name}
-                key={tech.id}
-                className="h-10 w-10"
-              />
+              <Tooltip key={tech.id}>
+                <TooltipTrigger asChild>
+                  <img src={tech.image} alt={tech.name} className="h-10 w-10" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{tech.name}</p>
+                </TooltipContent>
+              </Tooltip>
             ))}
           </div>
         </div>
@@ -260,14 +270,16 @@ export const TechnologyStack = () => {
           <div className="relative after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]">
             <h1 className="text-lg font-semibold px-4">Other</h1>
           </div>
-          <div className="flex px-2 gap-x-2">
+          <div className="flex px-2 gap-x-2 py-1">
             {OTHER_TECHNOLOGY_STACK.map((tech) => (
-              <img
-                src={tech.image}
-                alt={tech.name}
-                key={tech.id}
-                className="h-10 w-10"
-              />
+              <Tooltip key={tech.id}>
+                <TooltipTrigger asChild>
+                  <img src={tech.image} alt={tech.name} className="h-10 w-10" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{tech.name}</p>
+                </TooltipContent>
+              </Tooltip>
             ))}
           </div>
         </div>
