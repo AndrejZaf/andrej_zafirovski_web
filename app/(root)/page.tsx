@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import ProfileAbout from "@/components/profile-about";
 import ProfileCertification from "@/components/profile-certifications";
@@ -27,6 +28,8 @@ const Page = () => {
         <ProfileCertification />
         <Separator />
         <TechnologyStack />
+        <Separator />
+        <Footer />
       </div>
     </div>
   );

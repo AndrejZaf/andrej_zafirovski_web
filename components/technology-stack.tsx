@@ -239,7 +239,7 @@ export const TechnologyStack = () => {
             ))}
           </div>
         </div>
-        <div className="border-b">
+        <div>
           <div className="border-b">
             <h1 className="text-lg font-semibold px-4">Other</h1>
           </div>
