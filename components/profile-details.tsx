@@ -10,7 +10,7 @@ const ProfileDetails = () => {
       viewport={{ once: true, margin: "-10% 0px" }}
       transition={{ duration: 0.36 }}
     >
-      <div className="flex flex-col gap-1 px-4 py-1">
+      <div className="grid grid-cols-2 gap-1 px-4 gap-x-12 py-1">
         <div className="flex items-center gap-x-2">
           <div
             className="flex size-6 shrink-0 items-center justify-center rounded-full text-muted-foreground border"

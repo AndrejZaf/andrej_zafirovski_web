@@ -31,7 +31,7 @@ export const ProfileCertification = () => {
       transition={{ duration: 0.36 }}
     >
       <div className="border-b px-4">
-        <h1 className="text-xl font-semibold">Certifications</h1>
+        <h1 className="text-2xl font-semibold">Certifications</h1>
       </div>
       <div className="flex flex-col">
         {CERTIFICATIONS.map((cert) => (

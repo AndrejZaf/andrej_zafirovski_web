@@ -30,14 +30,14 @@ const ProfileLinks = () => {
     >
       <div>
         <div className="border-b">
-          <h1 className="text-xl font-semibold px-4">Links</h1>
+          <h1 className="text-2xl font-semibold px-4">Links</h1>
         </div>
         <div className="grid grid-cols-2 gap-x-4">
           {LINKS.map((link) => (
             <a
               key={link.id}
               href={link.url}
-              className="hover:underline border-r p-4"
+              className="hover:underline first:border-r last:border-l p-4"
               target="_blank"
             >
               <div className="flex justify-between items-center">

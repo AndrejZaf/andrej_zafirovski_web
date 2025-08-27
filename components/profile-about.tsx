@@ -13,7 +13,7 @@ const ProfileAbout = () => {
       >
         <div>
           <div className="border-y">
-            <h1 className="text-xl font-semibold px-4">About Me</h1>
+            <h1 className="text-2xl font-semibold px-4">About Me</h1>
           </div>
           <p className="text-justify px-4">
             Full Stack Engineer with 5+ years of experience building scalable

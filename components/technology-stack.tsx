@@ -184,7 +184,7 @@ export const TechnologyStack = () => {
       transition={{ duration: 0.36 }}
     >
       <div className="border-b">
-        <h1 className="text-xl font-semibold px-4">Technology Stack</h1>
+        <h1 className="text-2xl font-semibold px-4">Technology Stack</h1>
       </div>
 
       <div className="">

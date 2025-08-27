@@ -22,7 +22,7 @@ const ProfileHeader = () => {
           </div>
         </div>
         <div className="w-full self-end">
-          <div className="text-xl font-semibold border-y px-4">
+          <div className="text-2xl font-semibold border-y px-4">
             Andrej Zafirovski
           </div>
           <div className="px-4">Software Engineer</div>
