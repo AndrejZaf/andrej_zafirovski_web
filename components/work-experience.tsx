@@ -115,7 +115,7 @@ export function ExperienceItem({
             )}
           </div>
 
-          <h3 className="text-lg leading-snug font-medium">
+          <h3 className="text-lg leading-snug font-semibold">
             {experience.companyName}
           </h3>
 
