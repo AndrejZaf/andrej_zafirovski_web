@@ -153,7 +153,7 @@ const ProfileExperience = () => {
       transition={{ duration: 0.36 }}
     >
       <div>
-        <h1 className="text-xl font-semibold px-4">Experience</h1>
+        <h1 className="text-xl font-semibold border-b px-4">Experience</h1>
       </div>
       <WorkExperience experiences={WORK_EXPERIENCE} />
     </motion.div>
