@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Typewriter from "./typewriter";
 
 const ProfileHeader = () => {
   return (
@@ -25,7 +26,15 @@ const ProfileHeader = () => {
           <div className="text-2xl font-semibold border-y px-4">
             Andrej Zafirovski
           </div>
-          <div className="px-4">Software Engineer</div>
+          <div className="px-4 h-6">
+            <Typewriter
+              words={[
+                "Full Stack Engineer",
+                "Pull/Merge Request Merger",
+                "Commit Counter",
+              ]}
+            />
+          </div>
           {/* Full Stack Engineer | Building scalable microservices & clean architectures */}
         </div>
       </div>
