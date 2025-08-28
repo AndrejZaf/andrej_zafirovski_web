@@ -1,4 +1,4 @@
-import { Keyboard } from "lucide-react";
+import { Keyboard, Mouse } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 const Footer = () => {
@@ -12,6 +12,13 @@ const Footer = () => {
             <Keyboard size={18} />
           </TooltipTrigger>
           <TooltipContent>Keyboard</TooltipContent>
+        </Tooltip>
+        <div className="text-xs">and</div>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Mouse size={18} />
+          </TooltipTrigger>
+          <TooltipContent>Mouse</TooltipContent>
         </Tooltip>
       </div>
     </footer>
