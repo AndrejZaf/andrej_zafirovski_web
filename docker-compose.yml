@@ -4,10 +4,10 @@ services:
     container_name: andrej_zafirovski_web
     restart: unless-stopped
     labels:
-      - "traefik.enabled=true"
-      - "traefik.http.routes.andrej_zafirovski_web.rule=Host(`andrejzafirovski.com`)"
+      - "traefik.enable=true"
+      - "traefik.http.routers.andrej_zafirovski_web.rule=Host(`andrejzafirovski.com`)"
       - "traefik.http.routers.andrej_zafirovski_web.tls=true"
-      - "traefik.http.routers.andrej_zafirovski_web.tls.certresolvers=letsencrypt"
+      - "traefik.http.routers.andrej_zafirovski_web.tls.certresolver=letsencrypt"
       - "traefik.http.services.andrej_zafirovski_web.loadbalancer.server.port=3000"
     networks:
       - traefik
