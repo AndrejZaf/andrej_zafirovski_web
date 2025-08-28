@@ -3,7 +3,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 const Footer = () => {
   return (
-    <footer className="text-muted-foreground py-5 text-center">
+    <footer className="text-muted-foreground py-5 text-center text-sm">
       Andrej Zafirovski © {new Date().getFullYear()}
       <div className="flex items-center gap-x-1 justify-center">
         <div className="text-xs">Made with </div>

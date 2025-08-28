@@ -196,7 +196,13 @@ export const TechnologyStack = () => {
             {BACKEND_TECHNOLOGY_STACK.map((tech) => (
               <Tooltip key={tech.id}>
                 <TooltipTrigger asChild>
-                  <img src={tech.image} alt={tech.name} className="h-10 w-10" />
+                  <motion.img
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.8 }}
+                    src={tech.image}
+                    alt={tech.name}
+                    className="h-10 w-10"
+                  />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>{tech.name}</p>
@@ -213,7 +219,13 @@ export const TechnologyStack = () => {
             {FRONTEND_TECHNOLOGY_STACK.map((tech) => (
               <Tooltip key={tech.id}>
                 <TooltipTrigger asChild>
-                  <img src={tech.image} alt={tech.name} className="h-10 w-10" />
+                  <motion.img
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.8 }}
+                    src={tech.image}
+                    alt={tech.name}
+                    className="h-10 w-10"
+                  />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>{tech.name}</p>
@@ -230,7 +242,13 @@ export const TechnologyStack = () => {
             {DATABASE_TECHNOLOGY_STACK.map((tech) => (
               <Tooltip key={tech.id}>
                 <TooltipTrigger asChild>
-                  <img src={tech.image} alt={tech.name} className="h-10 w-10" />
+                  <motion.img
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.8 }}
+                    src={tech.image}
+                    alt={tech.name}
+                    className="h-10 w-10"
+                  />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>{tech.name}</p>
@@ -247,7 +265,13 @@ export const TechnologyStack = () => {
             {OTHER_TECHNOLOGY_STACK.map((tech) => (
               <Tooltip key={tech.id}>
                 <TooltipTrigger asChild>
-                  <img src={tech.image} alt={tech.name} className="h-10 w-10" />
+                  <motion.img
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.8 }}
+                    src={tech.image}
+                    alt={tech.name}
+                    className="h-10 w-10"
+                  />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>{tech.name}</p>
