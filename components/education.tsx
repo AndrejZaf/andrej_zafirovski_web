@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 
-export const ProfileEduction = () => {
+export const Eduction = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -30,4 +30,4 @@ export const ProfileEduction = () => {
   );
 };
 
-export default ProfileEduction;
+export default Eduction;

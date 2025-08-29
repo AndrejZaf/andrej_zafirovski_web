@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 
-const ProfileAbout = () => {
+const AboutMe = () => {
   return (
     <>
       <motion.div
@@ -27,4 +27,4 @@ const ProfileAbout = () => {
   );
 };
 
-export default ProfileAbout;
+export default AboutMe;

@@ -3,7 +3,7 @@
 import { ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 
-export const ProfileCertification = () => {
+export const Certification = () => {
   const CERTIFICATIONS = [
     {
       id: 1,
@@ -60,4 +60,4 @@ export const ProfileCertification = () => {
   );
 };
 
-export default ProfileCertification;
+export default Certification;

@@ -20,7 +20,7 @@ const LINKS = [
   },
 ];
 
-const ProfileLinks = () => {
+const Links = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -64,4 +64,4 @@ const ProfileLinks = () => {
   );
 };
 
-export default ProfileLinks;
+export default Links;

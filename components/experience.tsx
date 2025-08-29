@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { ExperienceItemType, WorkExperience } from "./work-experience";
 
-const ProfileExperience = () => {
+const Experience = () => {
   const WORK_EXPERIENCE: ExperienceItemType[] = [
     {
       id: "1",
@@ -13,7 +13,7 @@ const ProfileExperience = () => {
       positions: [
         {
           id: "1-1",
-          title: "Senior Software Engineer",
+          title: "Software Engineer III",
           employmentPeriod: "Jul 2024 - Present",
           employmentType: "Full-time",
           description: `- Integrated **Keycloak** into a legacy application replacing an outdated session based security mechanism. Conducted medium-scale codebase refactoring to improve the overall code quality and eliminate tech debt.
@@ -160,4 +160,4 @@ const ProfileExperience = () => {
   );
 };
 
-export default ProfileExperience;
+export default Experience;

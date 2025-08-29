@@ -2,7 +2,7 @@
 import { Code, Mail, MapPinIcon, Phone } from "lucide-react";
 import { motion } from "motion/react";
 
-const ProfileDetails = () => {
+const Details = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -52,4 +52,4 @@ const ProfileDetails = () => {
   );
 };
 
-export default ProfileDetails;
+export default Details;

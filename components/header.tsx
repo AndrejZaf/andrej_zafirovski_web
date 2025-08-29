@@ -1,16 +1,44 @@
-import Link from "next/link";
-import { ThemeSwitcher } from "./theme-switcher";
+"use client";
+
+import { motion } from "motion/react";
+import Typewriter from "./typewriter";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center border-b">
-      <Link href={"/"}>
-        <div className="text-3xl font-bold border-r px-4">AZ</div>
-      </Link>
-      <div className="items-center flex px-2 gap-x-2 border-l">
-        <ThemeSwitcher />
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-10% 0px" }}
+      transition={{ duration: 0.36 }}
+      className="border-b"
+    >
+      <div className="flex">
+        <div className="border-r">
+          <div className="p-0.5">
+            <img
+              src="./me.jpeg"
+              alt="Small profile"
+              className="aspect-square w-48 rounded-full outline-1 outline-offset-2 mx-auto object-cover object-top"
+            />
+          </div>
+        </div>
+        <div className="w-full self-end">
+          <div className="text-2xl font-semibold border-y px-4">
+            Andrej Zafirovski
+          </div>
+          <div className="px-4 h-6">
+            <Typewriter
+              words={[
+                "Full Stack Engineer",
+                "Pull/Merge Request Merger",
+                "Commit Counter",
+              ]}
+            />
+          </div>
+          {/* Full Stack Engineer | Building scalable microservices & clean architectures */}
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
