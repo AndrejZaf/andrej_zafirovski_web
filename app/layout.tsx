@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
-export const inter = Inter({ subsets: ["latin"] });
+export const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Andrej Zafirovski",
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased `}>
+      <body className={`${geist.className} antialiased `}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

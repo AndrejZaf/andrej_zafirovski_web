@@ -13,8 +13,8 @@ export const Eduction = () => {
       <div className="border-b px-4">
         <h1 className="text-2xl font-semibold">Education</h1>
       </div>
-      <div className="flex flex-col px-4">
-        <div className="font-semibold">
+      <div className="flex flex-col p-4">
+        <div className="font-medium">
           Faculty of Computer Science and Engineering within UKIM
         </div>
         <div className="flex justify-between">

@@ -187,12 +187,12 @@ export const TechnologyStack = () => {
         <h1 className="text-2xl font-semibold px-4">Technology Stack</h1>
       </div>
 
-      <div className="">
+      <div>
         <div className="border-b">
           <div className="border-b">
-            <h1 className="text-lg font-semibold px-4">Back End</h1>
+            <h1 className="text-lg font-medium px-4">Back End</h1>
           </div>
-          <div className="flex px-2 gap-x-2 py-1">
+          <div className="flex p-4 gap-x-2">
             {BACKEND_TECHNOLOGY_STACK.map((tech) => (
               <Tooltip key={tech.id}>
                 <TooltipTrigger asChild>
@@ -201,7 +201,7 @@ export const TechnologyStack = () => {
                     whileTap={{ scale: 0.8 }}
                     src={tech.image}
                     alt={tech.name}
-                    className="h-10 w-10"
+                    className="h-9 w-9"
                   />
                 </TooltipTrigger>
                 <TooltipContent>
@@ -213,9 +213,9 @@ export const TechnologyStack = () => {
         </div>
         <div className="border-b">
           <div className="border-b">
-            <h1 className="text-lg font-semibold px-4">Front End</h1>
+            <h1 className="text-lg font-medium px-4">Front End</h1>
           </div>
-          <div className="flex px-2 gap-x-2 py-1">
+          <div className="flex p-4 gap-x-2">
             {FRONTEND_TECHNOLOGY_STACK.map((tech) => (
               <Tooltip key={tech.id}>
                 <TooltipTrigger asChild>
@@ -236,9 +236,9 @@ export const TechnologyStack = () => {
         </div>
         <div className="border-b">
           <div className="border-b">
-            <h1 className="text-lg font-semibold px-4">Databases</h1>
+            <h1 className="text-lg font-medium px-4">Databases</h1>
           </div>
-          <div className="flex px-2 gap-x-2 py-1">
+          <div className="flex p-4 gap-x-2">
             {DATABASE_TECHNOLOGY_STACK.map((tech) => (
               <Tooltip key={tech.id}>
                 <TooltipTrigger asChild>
@@ -259,9 +259,9 @@ export const TechnologyStack = () => {
         </div>
         <div>
           <div className="border-b">
-            <h1 className="text-lg font-semibold px-4">Other</h1>
+            <h1 className="text-lg font-medium px-4">Other</h1>
           </div>
-          <div className="flex px-2 gap-x-2 py-1">
+          <div className="flex p-4 gap-x-2">
             {OTHER_TECHNOLOGY_STACK.map((tech) => (
               <Tooltip key={tech.id}>
                 <TooltipTrigger asChild>

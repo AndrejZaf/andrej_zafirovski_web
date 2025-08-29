@@ -32,12 +32,12 @@ const Links = () => {
         <div className="border-b">
           <h1 className="text-2xl font-semibold px-4">Links</h1>
         </div>
-        <div className="grid md:grid-cols-2 gap-x-4">
+        <div className="grid md:grid-cols-2">
           {LINKS.map((link) => (
             <a
               key={link.id}
               href={link.url}
-              className="hover:underline first:border-r last:border-l p-4 border-b md:border-0 last:border-0"
+              className="hover:underline first:border-r p-4 border-b md:border-0 last:border-0"
               target="_blank"
             >
               <div className="flex justify-between items-center">
@@ -50,7 +50,7 @@ const Links = () => {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <div className="font-semibold">{link.title}</div>
+                    <div className="font-medium">{link.title}</div>
                     <div>{link.subtitle}</div>
                   </div>
                 </div>

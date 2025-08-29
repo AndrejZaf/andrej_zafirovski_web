@@ -15,7 +15,7 @@ const AboutMe = () => {
           <div className="border-y">
             <h1 className="text-2xl font-semibold px-4">About Me</h1>
           </div>
-          <p className="text-justify px-4">
+          <p className="text-justify p-4">
             Full Stack Engineer with 5+ years of experience building scalable
             microservices and modern web applications. Experienced in Java,
             TypeScript, Spring Boot, and React. Passionate about automation,

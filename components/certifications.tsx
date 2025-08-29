@@ -45,7 +45,7 @@ export const Certification = () => {
                     className="h-12 w-12"
                   />
                   <div className="border-l p-2">
-                    <div className="font-semibold">{cert.title}</div>
+                    <div className="font-medium">{cert.title}</div>
                     <div className="text-sm text-gray-500">{cert.issuer}</div>
                     <div className="text-sm text-gray-500">{cert.date}</div>
                   </div>
