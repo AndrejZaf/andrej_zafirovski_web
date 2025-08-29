@@ -8,9 +8,10 @@ export const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Andrej Zafirovski",
   description: "Welcome to my portfolio",
+  metadataBase: new URL("https://andrejzafirovski.com"),
   openGraph: {
     type: "website",
-    url: "/",
+    url: "https://andrejzafirovski.com/",
     siteName: "andrejzafirovski.com",
     images: [
       {
