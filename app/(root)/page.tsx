@@ -9,6 +9,7 @@ import Header from "@/components/header";
 import Links from "@/components/links";
 import { Separator } from "@/components/separator";
 import TechnologyStack from "@/components/technology-stack";
+import Projects from "@/components/projects";
 
 const Page = () => {
   return (
@@ -22,6 +23,8 @@ const Page = () => {
         <Links />
         <Separator />
         <Experience />
+        {/* <Separator />
+        <Projects /> */}
         <Separator />
         <Eduction />
         <Separator />
