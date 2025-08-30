@@ -217,11 +217,11 @@ function Prose({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-function Skill({ className, ...props }: React.ComponentProps<"span">) {
+export function Skill({ className, ...props }: React.ComponentProps<"span">) {
   return (
     <span
       className={cn(
-        "inline-flex items-center px-1 py-0.5 text-xs text-muted-foreground",
+        "inline-flex items-center py-0.5 text-xs text-muted-foreground",
         className
       )}
       {...props}

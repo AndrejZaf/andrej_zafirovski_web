@@ -23,8 +23,8 @@ const Page = () => {
         <Links />
         <Separator />
         <Experience />
-        {/* <Separator />
-        <Projects /> */}
+        <Separator />
+        <Projects />
         <Separator />
         <Eduction />
         <Separator />
