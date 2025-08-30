@@ -87,6 +87,7 @@ const Projects = () => {
                   <a
                     href={project.repositoryUrl}
                     className="text-sm hover:underline"
+                    target="_blank"
                   >
                     <GithubIcon size={18} />
                   </a>
@@ -94,6 +95,7 @@ const Projects = () => {
                     <a
                       href={project.liveDemoUrl}
                       className="text-sm hover:underline"
+                      target="_blank"
                     >
                       <ExternalLink size={18} />
                     </a>
