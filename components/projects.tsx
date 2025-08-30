@@ -10,7 +10,7 @@ const Projects = () => {
       id: 1,
       name: "Whac A Meal",
       repositoryUrl: "https://github.com/AndrejZaf/whacameal-web/",
-      // liveDemoUrl: "https://whacameal.andrejzafirovski.com/",
+      liveDemoUrl: "https://whacameal.andrejzafirovski.com/",
       description:
         "Exploring NextJS by creating a blog like application for managing, exploring recipes and leveraging Google Gemini for content generation",
       technologies: [
