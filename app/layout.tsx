@@ -6,7 +6,7 @@ import "./globals.css";
 export const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Andrej Zafirovski",
+  title: "Andrej Zafirovski | Software Engineer",
   description: "Welcome to my portfolio",
   metadataBase: new URL("https://andrejzafirovski.com"),
   openGraph: {
