@@ -18,8 +18,8 @@ const AboutMe = () => {
           <p className="text-justify p-4">
             Full Stack Engineer with 5+ years of experience building scalable
             microservices and modern web applications. Experienced in Java,
-            TypeScript, Spring Boot, and React. Specializing in automation,
-            clean architecture, and solving complex system problems.
+            TypeScript, Spring Boot, and React. Interested in automation, clean
+            architecture, and solving complex system problems.
           </p>
         </div>
       </motion.div>
