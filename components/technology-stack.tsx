@@ -21,11 +21,6 @@ export const TechnologyStack = () => {
       image: "./tech-stack/javascript.svg",
     },
     {
-      id: 4,
-      name: "C#",
-      image: "./tech-stack/csharp.svg",
-    },
-    {
       id: 5,
       name: "Python",
       image: "./tech-stack/python.svg",
